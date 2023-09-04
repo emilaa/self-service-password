@@ -39,38 +39,34 @@
     <div class="alert alert-info">
     <form action="#" method="post" class="form-horizontal">
         <div class="form-group">
-            <label for="login" class="col-sm-4 control-label">{$msg_login}</label>
             <div class="col-sm-8">
                 <div class="input-group">
-                    <span class="input-group-addon"><i class="fa fa-fw fa-user"></i></span>
-                    <input type="text" name="login" id="login" value="{$login}" class="form-control" placeholder="{$msg_login}" />
+                    <span class="input-group-addon"><i class="ri-user-fill"></i></span>
+                    <input type="text" name="login" id="login" value="{$login}" class="form-control" placeholder="İstifadəçi adı" />
                 </div>
             </div>
         </div>
         <div class="form-group">
-            <label for="oldpassword" class="col-sm-4 control-label">{$msg_oldpassword}</label>
             <div class="col-sm-8">
                 <div class="input-group">
-                    <span class="input-group-addon"><i class="fa fa-fw fa-lock"></i></span>
-                    <input type="password" autocomplete="current-password" name="oldpassword" id="oldpassword" class="form-control" placeholder="{$msg_oldpassword}" />
+                    <span class="input-group-addon"><i class="ri-key-fill"></i></span>
+                    <input type="password" autocomplete="current-password" name="oldpassword" id="oldpassword" class="form-control" placeholder="Mövcud şifrə" />
                 </div>
             </div>
         </div>
         <div class="form-group">
-            <label for="newpassword" class="col-sm-4 control-label">{$msg_newpassword}</label>
             <div class="col-sm-8">
                 <div class="input-group">
-                    <span class="input-group-addon"><i class="fa fa-fw fa-lock"></i></span>
-                    <input type="password" autocomplete="new-password" name="newpassword" id="newpassword" class="form-control" placeholder="{$msg_newpassword}" />
+                    <span class="input-group-addon"><i class="ri-lock-fill"></i></span>
+                    <input type="password" autocomplete="new-password" name="newpassword" id="newpassword" class="form-control" placeholder="Yeni şifrə" />
                 </div>
             </div>
         </div>
         <div class="form-group">
-            <label for="confirmpassword" class="col-sm-4 control-label">{$msg_confirmpassword}</label>
             <div class="col-sm-8">
                 <div class="input-group">
-                    <span class="input-group-addon"><i class="fa fa-fw fa-lock"></i></span>
-                    <input type="password" autocomplete="new-password" name="confirmpassword" id="confirmpassword" class="form-control" placeholder="{$msg_confirmpassword}" />
+                    <span class="input-group-addon"><i class="ri-lock-fill"></i></span>
+                    <input type="password" autocomplete="new-password" name="confirmpassword" id="confirmpassword" class="form-control" placeholder="Şifrəni təsdiqlə" />
                 </div>
             </div>
         </div>

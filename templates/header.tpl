@@ -10,6 +10,7 @@
     <link rel="stylesheet" type="text/css" href="vendor/bootstrap/css/bootstrap-theme.min.css" />
     <link rel="stylesheet" type="text/css" href="vendor/font-awesome/css/font-awesome.min.css" />
     <link rel="stylesheet" type="text/css" href="css/self-service-password.css" />
+    <link href="https://cdn.jsdelivr.net/npm/remixicon@2.5.0/fonts/remixicon.css" rel="stylesheet" />
 {if $custom_css}
     <link rel="stylesheet" type="text/css" href="{$custom_css}" />
 {/if}
