@@ -17,6 +17,18 @@
       </div>
       <form action="#" method="post" class="form-horizontal">
         <h3 class="title">Change Password</h3>
+                {if count($dependency_errors)}
+        {foreach from=$dependency_errors key=result item=result_array}
+                <p class="text-danger">{$result_array['error']|unescape: "html" nofilter}</p>
+        {/foreach}
+        {else}
+        {if $error != ""}
+                <p class="result alert alert-{$result_criticity}">{$error|unescape: "html" nofilter}
+                {if $show_extended_error and $extended_error_msg}
+                    ({$extended_error_msg})
+                {/if}
+                </p>
+        {/if}
                 <div class="input-group">
                     <i class="ri-user-fill"></i>
                     <input type="text" name="login" id="login" value="{$login}" placeholder="İstifadəçi adı" />
