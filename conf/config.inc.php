@@ -320,14 +320,14 @@ $allowed_lang = array();
 $show_menu = true;
 
 # Logo
-$logo = "images/ltb-logo.png";
+$logo = "";
 
 # Background image
 $background_image = "";
 
 # Path is relative to htdocs/html and the custom CSS file should be created in css/ directory. For example: "css/sample.css"
 $custom_css = "";
-$display_footer = true;
+$display_footer = false;
 
 # Where to log password resets - Make sure apache has write permission
 # By default, they are logged in Apache log
