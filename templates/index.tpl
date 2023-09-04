@@ -1,6 +1,6 @@
 {include file="header.tpl"}
 <div class="panel panel-success">
-        ### <div class="title alert alert-success text-center"><h1>{$msg_title}</h1></div>
+        <h1>"Change Password"</h1>
         {if $logo }
         {/if}
         {if count($dependency_errors)}
