@@ -35,8 +35,8 @@
         {/if}
         <div class="form-group">
             <div class="col-sm-offset-4 col-sm-8">
-                <button type="submit" class="login-btn">
-                    Təsdiqlə {$msg_submit}
+                <button type="submit" class="login-btn btn btn-success">
+                    Təsdiqlə
                 </button>
             </div>
         </div>

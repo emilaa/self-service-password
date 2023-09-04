@@ -34,30 +34,30 @@
 $debug = false;
 
 # LDAP
-$ldap_url = "ldap://localhost";
-$ldap_starttls = false;
-$ldap_binddn = "cn=manager,dc=example,dc=com";
-$ldap_bindpw = 'secret';
+$ldap_url = "ldap://dc.cs401.local";
+$ldap_starttls = true;
+$ldap_binddn = "CN=Administrator,CN=Users,DC=cs401,DC=local";
+$ldap_bindpw = 'Emil123.';
 // for GSSAPI authentication, comment out ldap_bind* and uncomment ldap_krb5ccname lines
 //$ldap_krb5ccname = "/path/to/krb5cc";
-$ldap_base = "dc=example,dc=com";
-$ldap_login_attribute = "uid";
+$ldap_base = "dc=cs401,dc=local";
+$ldap_login_attribute = "sAMAccountName";
 $ldap_fullname_attribute = "cn";
-$ldap_filter = "(&(objectClass=person)($ldap_login_attribute={login}))";
+$ldap_filter = "(&(objectClass=user)(sAMAccountName={login})(!(userAccountControl:1.2.840.113556.1.4.803:=2)))";
 $ldap_use_exop_passwd = false;
 $ldap_use_ppolicy_control = false;
 
 # Active Directory mode
 # true: use unicodePwd as password field
 # false: LDAPv3 standard behavior
-$ad_mode = false;
+$ad_mode = true;
 $ad_options = [];
 # Force account unlock when password is changed
 $ad_options['force_unlock'] = false;
 # Force user change password at next login
 $ad_options['force_pwd_change'] = false;
 # Allow user with expired password to change password
-$ad_options['change_expired_password'] = false;
+$ad_options['change_expired_password'] = true;
 
 # Samba mode
 # true: update sambaNTpassword and sambaPwdLastSet attributes too
