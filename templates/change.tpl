@@ -16,6 +16,7 @@
         <div class="pill-4 rotate-45"></div>
       </div>
       <form action="#" method="post" class="form-horizontal">
+        <h3 class="title">Change Password</h3>
                 <div class="input-group">
                     <i class="ri-user-fill"></i>
                     <input type="text" name="login" id="login" value="{$login}" placeholder="İstifadəçi adı" />
