@@ -1,43 +1,43 @@
-{if $prehook_return and $display_prehook_error and $prehook_return > 0}
-    <div class="result alert alert-warning">
-    <p><i class="fa fa-fw fa-exclamation-triangle" aria-hidden="true"></i> {$prehook_output[0]}</p>
-    </div>
-{/if}
-{if $posthook_return and $display_posthook_error and $posthook_return > 0}
-    <div class="result alert alert-warning">
-    <p><i class="fa fa-fw fa-exclamation-triangle" aria-hidden="true"></i> {$posthook_output[0]}</p>
-    </div>
-{/if}
+### {if $prehook_return and $display_prehook_error and $prehook_return > 0}
+###     <div class="result alert alert-warning">
+###     <p><i class="fa fa-fw fa-exclamation-triangle" aria-hidden="true"></i> {$prehook_output[0]}</p>
+###     </div>
+### {/if}
+### {if $posthook_return and $display_posthook_error and $posthook_return > 0}
+###     <div class="result alert alert-warning">
+###     <p><i class="fa fa-fw fa-exclamation-triangle" aria-hidden="true"></i> {$posthook_output[0]}</p>
+###     </div>
+### {/if}
 {if $result !== "passwordchanged"}
-    {if $show_help }
-        <div class="result alert alert-warning">
-        <p><i class="fa fa-fw fa-exclamation-circle" aria-hidden="true"></i> {$msg_changehelp}</p>
-        {if $msg_changehelpextramessage}
-            <p>{$msg_changehelpextramessage|unescape: "html" nofilter}</p>
-        {/if}
-        {if !$show_menu and ($use_questions or $use_tokens or $use_sms or $change_sshkey) }
-            <ul>
-                {if $use_questions}
-                    <li>{$msg_changehelpquestions|unescape: "html" nofilter}</li>
-                {/if}
-                {if $use_tokens}
-                    <li>{$msg_changehelptoken|unescape: "html" nofilter}</li>
-                {/if}
-                {if $use_sms}
-                    <li>{$msg_changehelpsms|unescape: "html" nofilter}</li>
-                {/if}
-                {if $change_sshkey}
-                    <li>{$msg_changehelpsshkey|unescape: "html" nofilter}</li>
-                {/if}
-            </ul>
-        {/if}
-        </div>
-    {/if}
+    ### {if $show_help }
+    ###     <div class="result alert alert-warning">
+    ###     <p><i class="fa fa-fw fa-exclamation-circle" aria-hidden="true"></i> {$msg_changehelp}</p>
+    ###     {if $msg_changehelpextramessage}
+    ###         <p>{$msg_changehelpextramessage|unescape: "html" nofilter}</p>
+    ###     {/if}
+    ###     {if !$show_menu and ($use_questions or $use_tokens or $use_sms or $change_sshkey) }
+    ###         <ul>
+    ###             {if $use_questions}
+    ###                 <li>{$msg_changehelpquestions|unescape: "html" nofilter}</li>
+    ###             {/if}
+    ###             {if $use_tokens}
+    ###                 <li>{$msg_changehelptoken|unescape: "html" nofilter}</li>
+    ###             {/if}
+    ###             {if $use_sms}
+    ###                 <li>{$msg_changehelpsms|unescape: "html" nofilter}</li>
+    ###             {/if}
+    ###             {if $change_sshkey}
+    ###                 <li>{$msg_changehelpsshkey|unescape: "html" nofilter}</li>
+    ###             {/if}
+    ###         </ul>
+    ###     {/if}
+    ###     </div>
+    ### {/if}
     {if $pwd_show_policy !== "never" and $pwd_show_policy_pos === 'above'}
         {include file="policy.tpl"}
     {/if}
     <div class="alert alert-info">
-    <form action="#" method="post" class="form-horizontal">
+      <form action="#" method="post" class="form-horizontal">
                 <div class="input-group">
                     <i class="ri-user-fill"></i>
                     <input type="text" name="login" id="login" value="{$login}" class="form-control" placeholder="İstifadəçi adı" />
@@ -64,7 +64,7 @@
                 </button>
             </div>
         </div>
-    </form>
+      </form>
     </div>
 {if $pwd_show_policy !== "never" and $pwd_show_policy_pos === 'below'}
     {include file="policy.tpl"}

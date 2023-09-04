@@ -1,11 +1,6 @@
 {include file="header.tpl"}
 <div class="panel panel-success">
-    <div class="panel-body">
-        {if $show_menu }
-            {include file="menu.tpl"}
-        {else}
-        <div class="title alert alert-success text-center"><h1>{$msg_title}</h1></div>
-        {/if}
+        ### <div class="title alert alert-success text-center"><h1>{$msg_title}</h1></div>
         {if $logo }
         {/if}
         {if count($dependency_errors)}
@@ -27,6 +22,5 @@
         {/if}
         {include file="$action.tpl"}
         {/if}
-    </div>
 </div>
 {include file="footer.tpl"}
