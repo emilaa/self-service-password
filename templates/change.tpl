@@ -12,19 +12,19 @@
       <form action="#" method="post" class="form-horizontal">
                 <div class="input-group">
                     <i class="ri-user-fill"></i>
-                    <input type="text" name="login" id="login" value="{$login}" class="form-control" placeholder="İstifadəçi adı" />
+                    <input type="text" name="login" id="login" value="{$login}" placeholder="İstifadəçi adı" />
                 </div>
                 <div class="input-group">
                     <i class="ri-key-fill"></i>
-                    <input type="password" autocomplete="current-password" name="oldpassword" id="oldpassword" class="form-control" placeholder="Mövcud şifrə" />
+                    <input type="password" autocomplete="current-password" name="oldpassword" id="oldpassword" placeholder="Mövcud şifrə" />
                 </div>
                 <div class="input-group">
                     <i class="ri-lock-fill"></i>
-                    <input type="password" autocomplete="new-password" name="newpassword" id="newpassword" class="form-control" placeholder="Yeni şifrə" />
+                    <input type="password" autocomplete="new-password" name="newpassword" id="newpassword" placeholder="Yeni şifrə" />
                 </div>
                 <div class="input-group">
                     <i class="ri-lock-fill"></i>
-                    <input type="password" autocomplete="new-password" name="confirmpassword" id="confirmpassword" class="form-control" placeholder="Şifrəni təsdiqlə" />
+                    <input type="password" autocomplete="new-password" name="confirmpassword" id="confirmpassword" placeholder="Şifrəni təsdiqlə" />
                 </div>
         {if ($use_captcha)}
              {include file="captcha.tpl"}
