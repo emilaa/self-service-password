@@ -9,7 +9,7 @@
         {/foreach}
         {else}
         {if $error != ""}
-                <p>{$error|unescape: "html" nofilter}
+                <p class="result alert alert-{$result_criticity}">{$error|unescape: "html" nofilter}
                 {if $show_extended_error and $extended_error_msg}
                     ({$extended_error_msg})
                 {/if}
