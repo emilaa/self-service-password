@@ -1,12 +1,8 @@
 {if $prehook_return and $display_prehook_error and $prehook_return > 0}
-    <div class="result alert alert-warning">
-    <p><i class="fa fa-fw fa-exclamation-triangle" aria-hidden="true"></i> {$prehook_output[0]}</p>
-    </div>
+    <p class="text-danger">{$prehook_output[0]}</p>
 {/if}
 {if $posthook_return and $display_posthook_error and $posthook_return > 0}
-    <div class="result alert alert-warning">
-    <p><i class="fa fa-fw fa-exclamation-triangle" aria-hidden="true"></i> {$posthook_output[0]}</p>
-    </div>
+    <p class="text-danger">{$posthook_output[0]}</p>
 {/if}
 {if $result !== "passwordchanged"}
     {if $pwd_show_policy !== "never" and $pwd_show_policy_pos === 'above'}
