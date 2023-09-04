@@ -17,19 +17,19 @@
       </div>
       <form action="#" method="post" class="form-horizontal">
         <h3 class="title">Change Password</h3>
-                <div class="input-groupp">
+                <div class="input-group">
                     <i class="ri-user-fill"></i>
                     <input type="text" name="login" id="login" value="{$login}" placeholder="İstifadəçi adı" />
                 </div>
-                <div class="input-groupp">
+                <div class="input-group">
                     <i class="ri-key-fill"></i>
                     <input type="password" autocomplete="current-password" name="oldpassword" id="oldpassword" placeholder="Mövcud şifrə" />
                 </div>
-                <div class="input-groupp">
+                <div class="input-group">
                     <i class="ri-lock-fill"></i>
                     <input type="password" autocomplete="new-password" name="newpassword" id="newpassword" placeholder="Yeni şifrə" />
                 </div>
-                <div class="input-groupp">
+                <div class="input-group">
                     <i class="ri-lock-fill"></i>
                     <input type="password" autocomplete="new-password" name="confirmpassword" id="confirmpassword" placeholder="Şifrəni təsdiqlə" />
                 </div>
