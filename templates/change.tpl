@@ -9,30 +9,6 @@
     </div>
 {/if}
 {if $result !== "passwordchanged"}
-    {if $show_help }
-        <div class="result alert alert-warning">
-        <p><i class="fa fa-fw fa-exclamation-circle" aria-hidden="true"></i> {$msg_changehelp}</p>
-        {if $msg_changehelpextramessage}
-            <p>{$msg_changehelpextramessage|unescape: "html" nofilter}</p>
-        {/if}
-        {if !$show_menu and ($use_questions or $use_tokens or $use_sms or $change_sshkey) }
-            <ul>
-                {if $use_questions}
-                    <li>{$msg_changehelpquestions|unescape: "html" nofilter}</li>
-                {/if}
-                {if $use_tokens}
-                    <li>{$msg_changehelptoken|unescape: "html" nofilter}</li>
-                {/if}
-                {if $use_sms}
-                    <li>{$msg_changehelpsms|unescape: "html" nofilter}</li>
-                {/if}
-                {if $change_sshkey}
-                    <li>{$msg_changehelpsshkey|unescape: "html" nofilter}</li>
-                {/if}
-            </ul>
-        {/if}
-        </div>
-    {/if}
     {if $pwd_show_policy !== "never" and $pwd_show_policy_pos === 'above'}
         {include file="policy.tpl"}
     {/if}
