@@ -9,6 +9,12 @@
         {include file="policy.tpl"}
     {/if}
     <div class="alert alert-info">
+          <div class="design">
+        <div class="pill-1 rotate-45"></div>
+        <div class="pill-2 rotate-45"></div>
+        <div class="pill-3 rotate-45"></div>
+        <div class="pill-4 rotate-45"></div>
+      </div>
       <form action="#" method="post" class="form-horizontal">
                 <div class="input-group">
                     <i class="ri-user-fill"></i>
