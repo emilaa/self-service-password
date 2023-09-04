@@ -36,13 +36,9 @@
         {if ($use_captcha)}
              {include file="captcha.tpl"}
         {/if}
-        <div class="form-group">
-            <div class="col-sm-offset-4 col-sm-8">
                 <button type="submit" class="login-btn btn btn-success">
                     Təsdiqlə
                 </button>
-            </div>
-        </div>
       </form>
     </div>
 {if $pwd_show_policy !== "never" and $pwd_show_policy_pos === 'below'}
