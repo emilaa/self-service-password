@@ -5,10 +5,7 @@
         {/if}
         {if count($dependency_errors)}
         {foreach from=$dependency_errors key=result item=result_array}
-            <div class="result alert alert-{$result_array['criticity']}">
-                <p><i class="fa fa-fw {$result_array['fa_class']}" aria-hidden="true"></i> {$result_array['error']|unescape: "html" nofilter}
-                </p>
-            </div>
+                <p class="text-danger">{$result_array['error']|unescape: "html" nofilter}</p>
         {/foreach}
         {else}
         {if $error != ""}
