@@ -128,7 +128,7 @@ if ($result === "") {
 
                 if (!$entry) {
                     $result = "badcredentials";
-                    error_log("LDAP - User $login not found");
+                    error_log("LDAP - x $login not found");
                 } else {
                     # Get user email for notification
                     if ($notify_on_change) {
