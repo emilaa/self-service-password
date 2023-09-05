@@ -1,6 +1,6 @@
 docker run -p 8002:80 \
 	-d \
-        --name ssrp \
+        --name ssrp2 \
         -v $PWD/ldap.conf:/etc/ldap/ldap.conf \
         -v $PWD/hosts:/etc/hosts \
         -v $PWD/cs401-DC-CA.cer:/etc/ssl/certs/cs401-DC-CA.cer \
