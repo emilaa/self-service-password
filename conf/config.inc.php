@@ -37,7 +37,7 @@ $debug = false;
 $ldap_url = "ldap://192.168.10.254";
 $ldap_starttls = true;
 $ldap_binddn = "CN=Administrator,CN=Users,DC=cs401,DC=local";
-$ldap_bindpw = 'Emil123.';
+$ldap_bindpw = "Emil123.";
 // for GSSAPI authentication, comment out ldap_bind* and uncomment ldap_krb5ccname lines
 //$ldap_krb5ccname = "/path/to/krb5cc";
 $ldap_base = "dc=cs401,dc=local";
