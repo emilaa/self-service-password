@@ -34,7 +34,7 @@
 $debug = false;
 
 # LDAP
-$ldap_url = "ldap://192.168.10.254";
+$ldap_url = "ldap://dc.cs401.local";
 $ldap_starttls = true;
 $ldap_binddn = "CN=Administrator,CN=Users,DC=cs401,DC=local";
 $ldap_bindpw = "Emil123.";
